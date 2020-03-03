@@ -12,6 +12,10 @@
 		2D9EA52423FD89E900711AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D9EA52223FD89E900711AFA /* Main.storyboard */; };
 		2D9EA52623FD89EB00711AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D9EA52523FD89EB00711AFA /* Assets.xcassets */; };
 		2D9EA52923FD89EB00711AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D9EA52723FD89EB00711AFA /* LaunchScreen.storyboard */; };
+		2D9EA53123FE8A5900711AFA /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9EA53023FE8A5900711AFA /* Stopwatch.swift */; };
+		2D9EA53423FED18900711AFA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9EA53323FED18900711AFA /* AVFoundation.framework */; };
+		2D9EA53623FED2CD00711AFA /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9EA53523FED2CD00711AFA /* Sound.swift */; };
+		2D9EA53823FEDA2400711AFA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9EA53723FEDA2400711AFA /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		2D9EA52523FD89EB00711AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D9EA52823FD89EB00711AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D9EA52A23FD89EB00711AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D9EA53023FE8A5900711AFA /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		2D9EA53323FED18900711AFA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2D9EA53523FED2CD00711AFA /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		2D9EA53723FEDA2400711AFA /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9EA53423FED18900711AFA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				2D9EA51D23FD89E900711AFA /* PomodoroTimer */,
 				2D9EA51C23FD89E900711AFA /* Products */,
+				2D9EA53223FED18900711AFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +66,23 @@
 			children = (
 				2D9EA51E23FD89E900711AFA /* AppDelegate.swift */,
 				2D9EA52023FD89E900711AFA /* ViewController.swift */,
+				2D9EA53723FEDA2400711AFA /* Alert.swift */,
+				2D9EA53523FED2CD00711AFA /* Sound.swift */,
+				2D9EA53023FE8A5900711AFA /* Stopwatch.swift */,
 				2D9EA52223FD89E900711AFA /* Main.storyboard */,
 				2D9EA52523FD89EB00711AFA /* Assets.xcassets */,
 				2D9EA52723FD89EB00711AFA /* LaunchScreen.storyboard */,
 				2D9EA52A23FD89EB00711AFA /* Info.plist */,
 			);
 			path = PomodoroTimer;
+			sourceTree = "<group>";
+		};
+		2D9EA53223FED18900711AFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D9EA53323FED18900711AFA /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D9EA52123FD89E900711AFA /* ViewController.swift in Sources */,
+				2D9EA53123FE8A5900711AFA /* Stopwatch.swift in Sources */,
 				2D9EA51F23FD89E900711AFA /* AppDelegate.swift in Sources */,
+				2D9EA53823FEDA2400711AFA /* Alert.swift in Sources */,
+				2D9EA53623FED2CD00711AFA /* Sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
